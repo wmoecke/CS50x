@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Add Cash
+{% endblock %}
+
+{% block main %}
+    <form action="/cash" method="post">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="amount" name="amount" placeholder="Amount" type="text" pattern="[0-9]+\.?[0-9]+" title="Must enter a positive number and optionally, decimals preceded by '.'">
+        </div>
+        <button class="btn btn-primary" type="submit">Add Amount</button>
+    </form>
+{% endblock %}

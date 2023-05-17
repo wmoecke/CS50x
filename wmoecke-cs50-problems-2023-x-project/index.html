@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Binary LED Clock</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <link href="/static/styles.css" rel="stylesheet">
+        <link href="/static/images/favicon.ico" rel="icon">
+        <script src="static/binary_clock.js"></script>
+
+        <!-- http://getbootstrap.com/docs/5.2/ -->
+        <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha374-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" rel="stylesheet">
+        <script crossorigin="anonymous" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body>
+        <div class="container mt-0" id="container">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td><div id="dot12"></div></td>
+                        <td></td>
+                        <td><div id="dot32"></div></td>
+                        <td></td>
+                        <td><div id="dot52"></div></td>
+                        <td><b>8</b></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><div id="dot13"></div></td>
+                        <td><div id="dot23"></div></td>
+                        <td><div id="dot33"></div></td>
+                        <td><div id="dot43"></div></td>
+                        <td><div id="dot53"></div></td>
+                        <td><b>4</b></td>
+                    </tr>
+                    <tr>
+                        <td><div id="dot04"></div></td>
+                        <td><div id="dot14"></div></td>
+                        <td><div id="dot24"></div></td>
+                        <td><div id="dot34"></div></td>
+                        <td><div id="dot44"></div></td>
+                        <td><div id="dot54"></div></td>
+                        <td><b>2</b></td>
+                    </tr>
+                    <tr>
+                        <td><div id="dot05"></div></td>
+                        <td><div id="dot15"></div></td>
+                        <td><div id="dot25"></div></td>
+                        <td><div id="dot35"></div></td>
+                        <td><div id="dot45"></div></td>
+                        <td><div id="dot55"></div></td>
+                        <td><b>1</b></td>
+                    </tr>
+                    <tr class="subtitle">
+                        <td class="subtitle"><b>H</b></td>
+                        <td class="subtitle"><b>H</b></td>
+                        <td class="subtitle"><b>M</b></td>
+                        <td class="subtitle"><b>M</b></td>
+                        <td class="subtitle"><b>S</b></td>
+                        <td class="subtitle"><b>S</b></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+sort1 uses: Bubble Sort
+
+How do you know?: It is by far the slowest; below times are using the random10000.txt file.
+real    0m0.361s
+user    0m0.269s
+sys     0m0.028s
+
+sort2 uses: Merge Sort
+
+How do you know?: It is by far the fastest; below times are using the random10000.txt file.
+real    0m0.091s
+user    0m0.017s
+sys     0m0.031s
+
+sort3 uses: Selection Sort
+
+How do you know?: It stands between the slowest and the fastest; below times are using the random10000.txt file.
+real    0m0.272s
+user    0m0.135s
+sys     0m0.037s

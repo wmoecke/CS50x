@@ -1,0 +1,48 @@
+div[id^="dot"] {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: 2px solid;
+}
+
+td.subtitle {
+    padding-left: 15px !important;
+}
+tr.subtitle {
+    border-bottom-style: hidden !important;
+}
+
+#save {
+    float: left;
+}
+
+.alert {
+    float: left;
+    margin-left: 10px;
+    width: 233px;
+}
+
+@keyframes glow-led-red {
+    from {
+        box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #b30000, 0 0 40px #b30000, 0 0 50px #b30000, 0 0 60px #b30000, 0 0 70px #b30000;
+    }
+    to {
+        box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #b30000, 0 0 40px #b30000, 0 0 50px #b30000, 0 0 60px #b30000, 0 0 70px #b30000;
+    }
+}
+@keyframes glow-led-green {
+    from {
+        box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00b300, 0 0 40px #00b300, 0 0 50px #00b300, 0 0 60px #00b300, 0 0 70px #00b300;
+    }
+    to {
+        box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00b300, 0 0 40px #00b300, 0 0 50px #00b300, 0 0 60px #00b300, 0 0 70px #00b300;
+    }
+}
+@keyframes glow-led-blue {
+    from {
+        box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0000b3, 0 0 40px #0000b3, 0 0 50px #0000b3, 0 0 60px #0000b3, 0 0 70px #0000b3;
+    }
+    to {
+        box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0000b3, 0 0 40px #0000b3, 0 0 50px #0000b3, 0 0 60px #0000b3, 0 0 70px #0000b3;
+    }
+}

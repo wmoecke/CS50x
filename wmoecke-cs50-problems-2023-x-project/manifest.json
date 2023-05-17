@@ -1,0 +1,16 @@
+{
+    "name": "Binary Clock",
+    "version": "1.0.0",
+    "description": "A binary clock for your Chrome browser. Check the options page for skin settings.",
+    "manifest_version": 3,
+    "author": "Werner Moecke",
+    "action": {
+        "default_icon": "static/images/binary_clock.png",
+        "default_popup": "index.html",
+        "default_title": "Show/Hide Binary Clock"
+    },
+    "options_page": "options.html",
+    "permissions": [
+        "storage"
+    ]
+}

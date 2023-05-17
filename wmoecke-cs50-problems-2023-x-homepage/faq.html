@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link href="https://fonts.cdnfonts.com/css/star-wars" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/news-gothic-mt" rel="stylesheet">
+        <link href="static/styles.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>STAR WARS FAQ</title>
+    </head>
+    <body>
+        <header>
+            <h2 class="glow-text">STAR WARS FAQ</h2>
+            <nav class="nav">
+              <a class="nav-link" href="index.html" title="Homepage">Homepage</a>
+              <a class="nav-link" href="text-scroller.html" title="STAR WARS Text Scroller">STAR WARS Text Scroller</a>
+              <a class="nav-link" href="ships.html" title="STAR WARS Ships">STAR WARS Ships</a>
+              <a class="nav-link active" aria-current="page" href="#" title="STAR WARS FAQ">STAR WARS FAQ</a>
+            </nav>
+            <audio autoplay loop preload="auto">
+                <source src="static/media/Star_Wars_Cantina_Theme_Song.mp3" type="audio/mpeg">
+            </audio>
+        </header>
+        <div class="stars"></div>
+        <div class="twinkling"></div>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" onmouseover="timeOut = setTimeout(() => { this.click(); }, 500);" onmouseout="clearTimeout(timeOut);">
+                  Why aren't droids welcome in the cantina at Mos Eisley since they serve everyone else?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is likely a result of the Clone Wars.
+                    The Separatist Army was comprised mainly of droids, which had attacked and ravaged several planets. So some people still
+                    have prejudice against droids and don't want them in their establishments.<br><br>
+                    This is further substantiated with one of the short stories in the From a Certain Point of View book, in which it's revealed
+                    that Wuher the Bartender lost his family at the hands of droids in the Clone Wars.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" onmouseover="timeOut = setTimeout(() => { this.click(); }, 500);" onmouseout="clearTimeout(timeOut);">
+                  When does 'Star Wars: Episode iv: A New Hope' take place in the Star Wars timeline?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>Given that this is the original film, where the climactic Battle of Yavin takes place. It is the starting point of the timeline.
+                    Therefore it takes place in both 0 BBY (Before the Battle of Yavin) and 0 ABY (After the Battle of Yavin).
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" onmouseover="timeOut = setTimeout(() => { this.click(); }, 500);" onmouseout="clearTimeout(timeOut);">
+                  What is 'Star Wars: Episode iv: A New Hope' about?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>A long time ago in a galaxy far, far away, the dark forces of the Galactic Empire, ruled by the tyrannic Emperor Palpatine,
+                    have constructed the all-powerful DeathStar, a weapon capable of destroying whole planets. However, a Rebel Alliance has also formed
+                    to restore freedom and justice to the Galaxy. Rebel leader Princess Leia Organa (Carrie Fisher) obtains the schematics for the DeathStar
+                    and hides them in droid R2D2 (Kenny Baker) where they are discovered on the desert planet Tatooine by farmboy Luke Skywalker (Mark Hamill).
+                    Aided by elderly Jedi knight Ben 'Obi-wan' Kenobi (Alec Guinness), smuggler pilot Han Solo (Harrison Ford), Solo's Wookie co-pilot Chewbacca
+                    (Peter Mayhew), and R2D2's friend C-3PO (Anthony Daniels), Skywalker sets out to rescue the princess, who has been taken captive by Palpatine's
+                    Sith Lord Darth Vader (David Prowse, voice of James Earl Jones).
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" onmouseover="timeOut = setTimeout(() => { this.click(); }, 500);" onmouseout="clearTimeout(timeOut);">
+                  Is 'A New Hope' based on a book?
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>Star Wars IV: A New Hope, the movie, was first released in 1977 with the simple title Star Wars, based on a screenplay by American
+                    film-maker George Lucas. Based on the screenplay, the film was novelized as Star Wars: From the Adventures of Luke Skywalker (1976) by Alan
+                    Dean Foster, ghost-writing as George Lucas. Star Wars was heralded as a trilogy, and Lucas went on to co-write the screenplays for two sequels:
+                    The Empire Strikes Back (1980) and Star Wars: Episode VI - Return of the Jedi (1983). This original trilogy was followed by a second trilogy of
+                    movies-Star Wars: Episode I - The Phantom Menace (1999), Star Wars: Episode II - Attack of the Clones (2002), and Star Wars: Episode III - Revenge
+                    of the Sith (2005), actually prequels to the storyline of the original trilogy. A third trilogy, the sequel trilogy, is in the works, with two
+                    movies, Star Wars: Episode VII - The Force Awakens (2015) and Star Wars: Episode VIII - The Last Jedi (2017) already released. The third movie,
+                    Star Wars: Episode IX - The Rise of Skywalker (2019) is set to release in a few months.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" onmouseover="timeOut = setTimeout(() => { this.click(); }, 500);" onmouseout="clearTimeout(timeOut);">
+                  Exactly what is the Force?
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>Obi-wan describes the Force as "an energy field created by all living things. It surrounds us, penetrates us, and binds the galaxy together."
+                    It's the Force that gives the Jedi his powers. The Force may be conceived of as being similar to concepts of "life force" as found in many ancient
+                    cultures of this world, i.e., e.g., "chi" (氣) ("qi" in China) ("ki" in Japan), prana (प्राण) in India, Wakan Tanka or the Great Spirit in various
+                    Native American cultures.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix" onmouseover="timeOut = setTimeout(() => { this.click(); }, 500);" onmouseout="clearTimeout(timeOut);">
+                  Why exactly was the Empire so bad?
+                </button>
+              </h2>
+              <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>The Empire was an oppressive regime which overtook The Galactic Republic. The Empire would strip certain planets of their resources,
+                    effectively polluting and destroying them. They would also enslave the populations of these planets. One example is the Chewbacca's homeworld
+                    of Kashyyyk. The Empire reached the pinnacle of their oppression with the creation of the Death Star, a super weapon capable of destroying an
+                    entire planet. Their intention was, as Tarkin explains to his staff aboard the Death Star, to use fear to keep anyone from considering a rebellion.
+                </div>
+              </div>
+            </div>
+        </div>
+    </body>
+</html>

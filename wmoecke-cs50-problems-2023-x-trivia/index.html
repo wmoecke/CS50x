@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <script src="trivia.js"></script>
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>In the Star Wars universe, what is the substance that powers the lightsabers?</h3>
+                <input type="button" id="btn1" value="Diamonds from Saturn" onclick="checkButton(this.id)">
+                <input type="button" id="btn2_correct" value="Ilum Crystals" onclick="checkButton(this.id)">
+                <input type="button" id="btn3" value="Six 18650 batteries" onclick="checkButton(this.id)">
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>In the Star Wars universe, who was the Jedi master that ordered to create clones?</h3>
+                <p></p>
+                <input type="text" id="txtQuestion" autofocus placeholder="Type your answer">
+                <input type="button" value="Confirm" onclick="checkText()">
+            </div>
+        </div>
+    </body>
+</html>

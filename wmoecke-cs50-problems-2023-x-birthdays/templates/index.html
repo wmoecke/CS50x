@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="/static/styles.css" rel="stylesheet">
+        <script src="static/helper-functions.js"></script>
+        <title>Birthdays</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Birthdays</h1>
+        </div>
+        <div class="container">
+            <div class="section">
+
+                <h2 id="addOrEditHeader">Add a Birthday</h2>
+                <!-- TODO: Create a form for users to submit a name, a month, and a day -->
+                <form id="addOrEditForm" action="/" method="post">
+                    <input id="name" autocomplete="off" autofocus name="name" placeholder="Name" type="text">
+                    <input id="month" autocomplete="off" name="month" placeholder="Month" type="number" min="1" max="12">
+                    <input id="day" autocomplete="off" name="day" placeholder="Day" type="number" min="1" max="31">
+                    <button id="submit" type="submit">Add Birthday</button>
+                </form>
+            </div>
+
+            <div class="section">
+
+                <h2>All Birthdays</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Birthday</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- TODO: Loop through the database entries to display them in this table -->
+                        {% for entry in entries %}
+                            <tr>
+                                <td>{{ entry.name }}</td>
+                                <td>{{ entry.month }}/{{ entry.day }}</td>
+                                <td>
+                                    <form action="/delete" method="post">
+                                        <input name="id" type="hidden" value="{{ entry.id }}">
+                                        <button type="submit">Delete</button>
+                                    </form>
+                                </td>
+                                <td>
+                                    <button onclick="editEntry('{{ entry.id }}', '{{ entry.name }}', '{{ entry.month }}' ,'{{ entry.day }}');">Edit</button>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,8 @@
+Characterizing a person's audio aura by looking at the average energy, valence, and danceability would be like:
+SELECT AVG(energy), AVG(danceability), AVG(valence) FROM songs;
+
+However, I think the best way would be to calculate the percentages between the AVERAGE and MAX values for energy, valence, and danceability:
+SELECT AVG(energy) * 100.0 / (SELECT MAX(energy) FROM songs) AS perc_energy,
+       AVG(danceability) * 100.0 / (SELECT MAX(danceability) FROM songs) AS perc_danceability,
+       AVG(valence) * 100.0 / (SELECT MAX(valence) FROM songs) AS perc_valence
+FROM songs;

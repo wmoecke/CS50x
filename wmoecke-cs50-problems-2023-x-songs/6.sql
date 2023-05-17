@@ -1,0 +1,1 @@
+SELECT DISTINCT(name) FROM songs WHERE artist_id = (SELECT id FROM artists WHERE LOWER(name) = 'post malone');
