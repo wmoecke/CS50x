@@ -78,12 +78,12 @@ const renderBackground = () => {
         case "default":
             container.backgroundColor = "transparent";
             rows.forEach(row => {
-                row.style.borderColor = "#000";
+                row.style.borderColor = skin == "lcd" ? "#000" : "#dee2e6";
             });
             break;
         case "acrylic-red":
         case "brushedSteel-red":
-            container.style.backgroundColor = "#cc0000";
+            container.style.background = "linear-gradient(to bottom right, #a30000, #cc6666)";
             rows.forEach(row => {
                 row.style.borderColor = "#ff6666";
                 row.style.color = "#ff6666";
@@ -91,7 +91,7 @@ const renderBackground = () => {
             break;
         case "acrylic-green":
         case "brushedSteel-green":
-            container.style.backgroundColor = "#00cc00";
+            container.style.background = "linear-gradient(to bottom right, #00a300, #66cc66)";
             rows.forEach(row => {
                 row.style.borderColor = "#66ff66";
                 row.style.color = "#66ff66";
@@ -99,7 +99,7 @@ const renderBackground = () => {
             break;
         case "acrylic-blue":
         case "brushedSteel-blue":
-            container.style.backgroundColor = "#0000cc";
+            container.style.background = "linear-gradient(to bottom right, #0000a3, #6666cc)";
             rows.forEach(row => {
                 row.style.borderColor = "#6666ff";
                 row.style.color = "#6666ff";
@@ -116,7 +116,7 @@ const renderBackground = () => {
         container.style.backgroundImage = "url('static/images/brushed_steel.jpg')";
         container.style.backgroundSize = "cover";
         rows.forEach(row => {
-            row.style.textShadow = "0 1px 0 #FFFFFF";
+            row.style.textShadow = "0 1px 0 #fff";
             row.style.borderStyle = "groove";
             row.style.borderColor = "#dee2e6";
             row.style.color = "#000";
