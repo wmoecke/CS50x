@@ -35,6 +35,7 @@ const renderDot = (dot, bit) => {
     case "default":
         dot.style.backgroundColor = bit == "0" ? skin == "lcd" ? "transparent" : "#eee" : "#000";
         dot.style.borderColor = "#000";
+        dot.style.boxShadow = (skin == "lcd" && bit == "1") ? "2px 2px #aaa" : null;
         break;
     case "acrylic-red":
     case "brushedSteel-red":
@@ -110,6 +111,8 @@ const renderBackground = () => {
     if(skin == "lcd") {
         container.style.backgroundImage = "linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('static/images/brushed_steel.jpg')";
         container.style.backgroundSize = "cover";
+        container.style.filter = "sepia(25%)";
+        document.querySelector(`div:not([id^="dot"])`).style.textShadow = "2px 2px #aaa";
     }
 
     if(skin.includes("brushedSteel")) {
