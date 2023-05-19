@@ -19,6 +19,7 @@ The project comprises 2 .js files, 1 .css file and 2 .html files. The respective
 The `options.js` file contains code respective to the `options.html` page. Two functions are present:
 - `saveOptions()`: this function is triggered by the _Save_ button, on the options page. It sets the necessary variables in the local storage for the 2 settings (_skin_ and _size_) and provides visual feedback to the user about the save state.
 - `restoreOptions()`: this function is triggered by the `DOMContentLoaded` event, which is to say, it is called when the entire DOM is loaded on the options page. It then adds an event listener to the _Save_ button's `click` event, in order to fire the `saveOptions()` function every time this button is clicked. It also reads the variables from the local storage in order to set the values for the 2 list boxes with the ones from local storage.
+- `toggleCheckboxVisibilityOnSkinChange()`: this function ensures that the _Backlit_ checkbox is only visible when the _LCD_ skin is selected.
 
 
 The `binary_clock.js` file as mentioned before, contains code respective to the main application. It is responsible for all the functionalities that the clock offers. Below is a summary of its functions:
