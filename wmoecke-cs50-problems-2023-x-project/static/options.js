@@ -26,7 +26,7 @@ const restoreOptions = () => {
     document.querySelector('#skin').value = localStorage.getItem("BinaryClockSkin") || "default";
     document.querySelector('#size').value = localStorage.getItem("BinaryClockSize") || "400px";
     document.querySelector('#backlight').checked = (localStorage.getItem("BinaryClockBacklit") || "false") === "true";
-    document.querySelector('#backlight-wrapper').style.display = document.querySelector('#skin').value == "lcd" ? "block" : "none";
+    toggleCheckboxVisibilityOnSkinChange();
 };
 
 document.addEventListener('DOMContentLoaded', restoreOptions);
