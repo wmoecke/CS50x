@@ -43,6 +43,14 @@ tr.subtitle {
         box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #b30000, 0 0 40px #b30000, 0 0 50px #b30000, 0 0 60px #b30000, 0 0 70px #b30000;
     }
 }
+@keyframes fade-led-red {
+    from {
+        box-shadow: 0 0 10px #b30000 inset, 0 0 20px #b30000 inset, 0 0 30px #fff inset, 0 0 40px #fff inset, 0 0 50px #fff inset, 0 0 60px #fff inset, 0 0 70px #fff inset;
+    }
+    to {
+        box-shadow: 0 0 10px #b30000 inset, 0 0 20px #b30000 inset, 0 0 30px #fff inset, 0 0 40px #fff inset, 0 0 50px #fff inset, 0 0 60px #fff inset, 0 0 70px #fff inset;
+    }
+}
 @keyframes glow-led-green {
     from {
         box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00b300, 0 0 40px #00b300, 0 0 50px #00b300, 0 0 60px #00b300, 0 0 70px #00b300;
@@ -51,11 +59,27 @@ tr.subtitle {
         box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00b300, 0 0 40px #00b300, 0 0 50px #00b300, 0 0 60px #00b300, 0 0 70px #00b300;
     }
 }
+@keyframes fade-led-green {
+    from {
+        box-shadow: 0 0 10px #00b300 inset, 0 0 20px #00b300 inset, 0 0 30px #fff inset, 0 0 40px #fff inset, 0 0 50px #fff inset, 0 0 60px #fff inset, 0 0 70px #fff inset;
+    }
+    to {
+        box-shadow: 0 0 10px #00b300 inset, 0 0 20px #00b300 inset, 0 0 30px #fff inset, 0 0 40px #fff inset, 0 0 50px #fff inset, 0 0 60px #fff inset, 0 0 70px #fff inset;
+    }
+}
 @keyframes glow-led-blue {
     from {
         box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0000b3, 0 0 40px #0000b3, 0 0 50px #0000b3, 0 0 60px #0000b3, 0 0 70px #0000b3;
     }
     to {
         box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0000b3, 0 0 40px #0000b3, 0 0 50px #0000b3, 0 0 60px #0000b3, 0 0 70px #0000b3;
+    }
+}
+@keyframes fade-led-blue {
+    from {
+        box-shadow: 0 0 10px #0000b3 inset, 0 0 20px #0000b3 inset, 0 0 30px #fff inset, 0 0 40px #fff inset, 0 0 50px #fff inset, 0 0 60px #fff inset, 0 0 70px #fff inset;
+    }
+    to {
+        box-shadow: 0 0 10px #0000b3 inset, 0 0 20px #0000b3 inset, 0 0 30px #fff inset, 0 0 40px #fff inset, 0 0 50px #fff inset, 0 0 60px #fff inset, 0 0 70px #fff inset;
     }
 }
