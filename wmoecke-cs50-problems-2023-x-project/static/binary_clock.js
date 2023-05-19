@@ -62,6 +62,7 @@ const renderBackground = () => {
     // Read the skin preset and size from local settings
     let skin = localStorage.getItem("BinaryClockSkin") || "default";
     let size = localStorage.getItem("BinaryClockSize") || "400px";
+    let backlit = (localStorage.getItem("BinaryClockBacklit") || "false") === "true";
 
     // Get the container div
     let container = document.querySelector("#container");
@@ -112,6 +113,7 @@ const renderBackground = () => {
         container.style.backgroundImage = "linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('static/images/brushed_steel.jpg')";
         container.style.backgroundSize = "cover";
         container.style.filter = "sepia(25%)";
+        container.style.animation = backlit ? "glow-lcd-backlit 1s linear infinite" : null;
         document.querySelector(`div:not([id^="dot"])`).style.textShadow = "2px 2px #aaa";
     }
 

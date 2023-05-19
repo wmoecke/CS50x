@@ -12,14 +12,27 @@ tr.subtitle {
     border-bottom-style: hidden !important;
 }
 
+.alert, #backlight-wrapper {
+    float: left;
+    margin-left: 10px;
+    width: 233px;
+}
+
 #save {
     float: left;
 }
 
-.alert {
+#skin {
     float: left;
-    margin-left: 10px;
-    width: 233px;
+}
+
+@keyframes glow-lcd-backlit {
+    from {
+        box-shadow: 0 0 10px #fff inset, 0 0 20px #fff inset, 0 0 30px #ffffcc inset, 0 0 40px #ffffcc inset, 0 0 50px #ffffcc inset, 0 0 60px #ffffcc inset, 0 0 70px #ffffcc inset;
+    }
+    to {
+        box-shadow: 0 0 10px #fff inset, 0 0 20px #fff inset, 0 0 30px #ffffcc inset, 0 0 40px #ffffcc inset, 0 0 50px #ffffcc inset, 0 0 60px #ffffcc inset, 0 0 70px #ffffcc inset;
+    }
 }
 
 @keyframes glow-led-red {
