@@ -18,11 +18,7 @@ tr.subtitle {
     width: 233px;
 }
 
-#save {
-    float: left;
-}
-
-#skin {
+#save, #skin {
     float: left;
 }
 
