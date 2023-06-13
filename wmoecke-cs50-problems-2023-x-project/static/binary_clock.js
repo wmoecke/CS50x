@@ -28,6 +28,7 @@ const processDots = (time) => {
 const renderDot = (dot, bit) => {
     // Read the skin preset from local settings
     let skin = localStorage.getItem("BinaryClockSkin") || "default";
+    let backlit = (localStorage.getItem("BinaryClockBacklit") || "false") === "true";
 
     // According to selected skin, style the changes appropriately for the current dot
     switch(skin) {
@@ -35,7 +36,9 @@ const renderDot = (dot, bit) => {
     case "default":
         dot.style.backgroundColor = bit == "0" ? skin == "lcd" ? "transparent" : "#eee" : "#000";
         dot.style.borderColor = "#000";
-        dot.style.boxShadow = (skin == "lcd" && bit == "1") ? "2px 2px #aaa" : null;
+        if(!backlit) {
+            dot.style.boxShadow = skin == "lcd" ? bit == "1" ? "2px 2px 2px #aaa" : "2px 2px 2px #aaa, 2px 2px 2px #aaa inset" : null;
+        }
         break;
     case "acrylic-red":
     case "brushedSteel-red":
@@ -114,7 +117,13 @@ const renderBackground = () => {
         container.style.backgroundSize = "cover";
         container.style.filter = "sepia(25%)";
         container.style.animation = backlit ? "glow-lcd-backlit 1s linear infinite" : null;
-        document.querySelector(`div:not([id^="dot"])`).style.textShadow = "2px 2px #aaa";
+        if(!backlit) {
+            document.querySelector(`div:not([id^="dot"])`).style.textShadow = "2px 2px 1px #aaa";            
+            let rows = document.querySelectorAll("tr");
+            rows.forEach(row => {
+                row.style.boxShadow = "0 2px 1px #aaa";  
+            });
+        }
     }
 
     if(skin.includes("brushedSteel")) {
