@@ -36,27 +36,27 @@ const renderDot = (dot, bit) => {
     case "default":
         dot.style.backgroundColor = bit == "0" ? skin == "lcd" ? "transparent" : "#eee" : "#000";
         dot.style.borderColor = "#000";
-        if(!backlit) {
+        if(skin == "lcd" && !backlit) {
             dot.style.boxShadow = skin == "lcd" ? bit == "1" ? "2px 2px 2px #aaa" : "2px 2px 2px #aaa, 2px 2px 2px #aaa inset" : null;
         }
         break;
     case "acrylic-red":
     case "brushedSteel-red":
         dot.style.backgroundColor = bit == "0" ? "#b30000" : "#ff5050"
-        dot.style.borderColor = bit == "0" ? "#b30000" : "#ff6666";
-        dot.style.animation = bit == "0" ? skin == "brushedSteel-red" ? "fade-led-red 1s linear infinite" : null : "glow-led-red 1s linear infinite";
+        dot.style.borderColor = bit == "0" ? skin == "brushedSteel-red" ? "#b34444" : "#b30000" : skin == "brushedSteel-red" ? "#ff8080" : "#ff2a2a";
+        dot.style.animation = bit == "0" ? skin == "brushedSteel-red" ? "fade-led-red 1s linear infinite" : null : skin == "brushedSteel-red" ? "glow-led-red 1s linear infinite" : null;
         break;
     case "acrylic-green":
     case "brushedSteel-green":
         dot.style.backgroundColor = bit == "0" ? "#00b300" : "#50ff50"
         dot.style.borderColor = bit == "0" ? "#00b300" : "#66ff66";
-        dot.style.animation = bit == "0" ? skin == "brushedSteel-green" ? "fade-led-green 1s linear infinite" : null : "glow-led-green 1s linear infinite";
+        dot.style.animation = bit == "0" ? skin == "brushedSteel-green" ? "fade-led-green 1s linear infinite" : null : skin == "brushedSteel-green" ? "glow-led-green 1s linear infinite" : null;
         break;
     case "acrylic-blue":
     case "brushedSteel-blue":
         dot.style.backgroundColor = bit == "0" ? "#0000b3" : "#5050ff"
         dot.style.borderColor = bit == "0" ? "#0000b3" : "#6666ff";
-        dot.style.animation = bit == "0" ? skin == "brushedSteel-blue" ? "fade-led-blue 1s linear infinite" : null : "glow-led-blue 1s linear infinite";
+        dot.style.animation = bit == "0" ? skin == "brushedSteel-blue" ? "fade-led-blue 1s linear infinite" : null : skin == "brushedSteel-blue" ? "glow-led-blue 1s linear infinite" : null;
         break;
     }
 }
@@ -88,10 +88,10 @@ const renderBackground = () => {
             break;
         case "acrylic-red":
         case "brushedSteel-red":
-            container.style.background = "linear-gradient(to bottom right, #a30000, #cc6666)";
+            container.style.background = "linear-gradient(to bottom right, #990000, #b32a2a)";
             rows.forEach(row => {
-                row.style.borderColor = "#ff6666";
-                row.style.color = "#ff6666";
+                row.style.borderColor = "#ff1a1a";
+                row.style.color = "#ff1a1a";
             });
             break;
         case "acrylic-green":
@@ -119,7 +119,6 @@ const renderBackground = () => {
         container.style.animation = backlit ? "glow-lcd-backlit 1s linear infinite" : null;
         if(!backlit) {
             document.querySelector(`div:not([id^="dot"])`).style.textShadow = "2px 2px 1px #aaa";            
-            let rows = document.querySelectorAll("tr");
             rows.forEach(row => {
                 row.style.boxShadow = "0 2px 1px #aaa";  
             });

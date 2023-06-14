@@ -30,13 +30,12 @@ tr.subtitle {
         box-shadow: 0 0 10px #fff inset, 0 0 20px #fff inset, 0 0 30px #ffffcc inset, 0 0 40px #ffffcc inset, 0 0 50px #ffffcc inset, 0 0 60px #ffffcc inset, 0 0 70px #ffffcc inset;
     }
 }
-
 @keyframes glow-led-red {
     from {
-        box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #b30000, 0 0 40px #b30000, 0 0 50px #b30000, 0 0 60px #b30000, 0 0 70px #b30000;
+        box-shadow: 0 0 10px #fff, 0 0 20px #b34444, 0 0 30px #b30000, 0 0 40px #b30000, 0 0 50px #b30000, 0 0 60px #b30000, 0 0 70px #b30000;
     }
     to {
-        box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #b30000, 0 0 40px #b30000, 0 0 50px #b30000, 0 0 60px #b30000, 0 0 70px #b30000;
+        box-shadow: 0 0 10px #fff, 0 0 20px #b34444, 0 0 30px #b30000, 0 0 40px #b30000, 0 0 50px #b30000, 0 0 60px #b30000, 0 0 70px #b30000;
     }
 }
 @keyframes fade-led-red {
