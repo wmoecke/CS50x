@@ -36,14 +36,14 @@ const renderDot = (dot, bit) => {
     case "default":
         dot.style.backgroundColor = bit == "0" ? skin == "lcd" ? "transparent" : "#eee" : "#000";
         dot.style.borderColor = "#000";
-        if(skin == "lcd" && !backlit) {
+        if(!backlit) {
             dot.style.boxShadow = skin == "lcd" ? bit == "1" ? "2px 2px 2px #aaa" : "2px 2px 2px #aaa, 2px 2px 2px #aaa inset" : null;
         }
         break;
     case "acrylic-red":
     case "brushedSteel-red":
         dot.style.backgroundColor = bit == "0" ? "#b30000" : "#ff5050"
-        dot.style.borderColor = bit == "0" ? skin == "brushedSteel-red" ? "#b34444" : "#b30000" : skin == "brushedSteel-red" ? "#ff8080" : "#ff2a2a";
+        dot.style.borderColor = bit == "0" ? skin == "brushedSteel-red" ? "#b34444" : "#b30000" : skin == "brushedSteel-red" ? "#ff8080" : "#ff2020";
         dot.style.animation = bit == "0" ? skin == "brushedSteel-red" ? "fade-led-red 1s linear infinite" : null : skin == "brushedSteel-red" ? "glow-led-red 1s linear infinite" : null;
         break;
     case "acrylic-green":
@@ -54,8 +54,8 @@ const renderDot = (dot, bit) => {
         break;
     case "acrylic-blue":
     case "brushedSteel-blue":
-        dot.style.backgroundColor = bit == "0" ? "#0000b3" : "#5050ff"
-        dot.style.borderColor = bit == "0" ? "#0000b3" : "#6666ff";
+        dot.style.backgroundColor = bit == "0" ? skin == "brushedSteel-blue" ? "#004de6" : "#0000cc" : "#6699ff";
+        dot.style.borderColor = bit == "0" ? skin == "brushedSteel-blue" ? "#004de6" : "#0000cc" : "#6699ff";
         dot.style.animation = bit == "0" ? skin == "brushedSteel-blue" ? "fade-led-blue 1s linear infinite" : null : skin == "brushedSteel-blue" ? "glow-led-blue 1s linear infinite" : null;
         break;
     }
@@ -88,7 +88,7 @@ const renderBackground = () => {
             break;
         case "acrylic-red":
         case "brushedSteel-red":
-            container.style.background = "linear-gradient(to bottom right, #990000, #b32a2a)";
+            container.style.background = "linear-gradient(to bottom right, #890000, #cc1a1a)";
             rows.forEach(row => {
                 row.style.borderColor = "#ff1a1a";
                 row.style.color = "#ff1a1a";
@@ -104,10 +104,10 @@ const renderBackground = () => {
             break;
         case "acrylic-blue":
         case "brushedSteel-blue":
-            container.style.background = "linear-gradient(to bottom right, #0000a3, #6666cc)";
+            container.style.background = "linear-gradient(to bottom right, #000089, #1a1acc)";
             rows.forEach(row => {
-                row.style.borderColor = "#6666ff";
-                row.style.color = "#6666ff";
+                row.style.borderColor = "#6699ff";
+                row.style.color = "#6699ff";
             });
             break;
     }

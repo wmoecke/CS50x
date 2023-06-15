@@ -64,17 +64,17 @@ tr.subtitle {
 }
 @keyframes glow-led-blue {
     from {
-        box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0000b3, 0 0 40px #0000b3, 0 0 50px #0000b3, 0 0 60px #0000b3, 0 0 70px #0000b3;
+        box-shadow: 0 0 10px #fff, 0 0 20px #004de6, 0 0 30px #0000cc, 0 0 40px #0000cc, 0 0 50px #0000cc, 0 0 60px #0000cc, 0 0 70px #0000cc;
     }
     to {
-        box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0000b3, 0 0 40px #0000b3, 0 0 50px #0000b3, 0 0 60px #0000b3, 0 0 70px #0000b3;
+        box-shadow: 0 0 10px #fff, 0 0 20px #004de6, 0 0 30px #0000cc, 0 0 40px #0000cc, 0 0 50px #0000cc, 0 0 60px #0000cc, 0 0 70px #0000cc;
     }
 }
 @keyframes fade-led-blue {
     from {
-        box-shadow: 0 0 10px #0000b3 inset, 0 0 20px #0000b3 inset, 0 0 30px #fff inset, 0 0 40px #fff inset, 0 0 50px #fff inset, 0 0 60px #fff inset, 0 0 70px #fff inset;
+        box-shadow: 0 0 10px #004de6 inset, 0 0 20px #004de6 inset, 0 0 30px #fff inset, 0 0 40px #fff inset, 0 0 50px #fff inset, 0 0 60px #fff inset, 0 0 70px #fff inset;
     }
     to {
-        box-shadow: 0 0 10px #0000b3 inset, 0 0 20px #0000b3 inset, 0 0 30px #fff inset, 0 0 40px #fff inset, 0 0 50px #fff inset, 0 0 60px #fff inset, 0 0 70px #fff inset;
+        box-shadow: 0 0 10px #004de6 inset, 0 0 20px #004de6 inset, 0 0 30px #fff inset, 0 0 40px #fff inset, 0 0 50px #fff inset, 0 0 60px #fff inset, 0 0 70px #fff inset;
     }
 }
